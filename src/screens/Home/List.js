@@ -3,19 +3,20 @@ import { useTheme } from "styled-components";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
 const ViewList = styled.View`
-  flex: 1;
   width: 100%;
   background-color: #008f8c;
-  margin: 5px 0;
   border-radius: 10px;
   flex-direction: row;
+  padding: 5px;
+  margin-bottom: 15px;
+  align-items: center;
 `;
 
 export const ViewIcon = styled.Pressable`
   width: 15%;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 10px;
 `;
 
 export const PressableText = styled.Pressable`
@@ -36,7 +37,7 @@ export default function List({ data, handleRemove, handleEdit }) {
         <Ionicons name="remove-circle" size={25} color={theme.color.white} />
       </ViewIcon>
       <PressableText onPress={() => handleEdit(data)}>
-        <Text>{data.nome}</Text>
+        <Text>{data.name}</Text>
       </PressableText>
     </ViewList>
   );

@@ -15,28 +15,33 @@ export const Text = styled.Text`
 
 export const ViewInput = styled.View`
   width: 100%;
-  height: 50px;
+  height: 60px;
   border-radius: 10px;
   padding: 0 10px;
   border: #e1e1e1;
   margin: 10px 0 30px;
-  color: #e1e1e1;
-  font-size: 14px;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 `;
 
 export const Input = styled.TextInput`
-  width: 90%;
+  width: 80%;
   height: 100%;
+  color: #000;
+  font-size: 14px;
 `;
 
-export const ViewIcon = styled.View`
+export const PressableIcon = styled.Pressable`
   width: 10%;
   height: 100%;
   align-items: center;
   justify-content: center;
+  padding-right: 5px;
+  //background-color: red;
+  margin: 5px;
 `;
 
 export const FlatList = styled.FlatList``;
+
+export const Modal = styled.Modal``;

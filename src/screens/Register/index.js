@@ -27,6 +27,7 @@ export default function Register({ changeStatus }) {
         .signInWithEmailAndPassword(email, psw)
         .then((user) => {
           changeStatus(user.user.uid);
+          alert("Certo");
         })
         .catch((error) => {
           setError(true);
@@ -80,7 +81,7 @@ export default function Register({ changeStatus }) {
 
         <Button
           text={signUpScreen ? "Cadastre-se" : "Login"}
-          onPress={Register}
+          onPress={() => Register()}
           bgColor={signUpScreen ? theme.color.white : theme.color.secondary}
           textColor={signUpScreen ? theme.color.secondary : theme.color.white}
         />
