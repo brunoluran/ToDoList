@@ -1,4 +1,4 @@
-import styled from 'styled-components/native';
+import styled from "styled-components/native";
 
 const PressableArea = styled.Pressable`
   width: 50%;

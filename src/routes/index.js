@@ -1,7 +1,7 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import Register from '../screens/Register';
-import Home from '../screens/Home';
+import Register from "../screens/Register";
+import Home from "../screens/Home";
 
 const Stack = createNativeStackNavigator();
 
@@ -12,8 +12,8 @@ export default function Routes() {
         headerShown: false,
       }}
     >
-      <Stack.Screen name='Register' component={Register} />
-      <Stack.Screen name='Home' component={Home} />
+      {/* <Stack.Screen name='Register' component={Register} /> */}
+      <Stack.Screen name="Home" component={Home} />
     </Stack.Navigator>
   );
 }

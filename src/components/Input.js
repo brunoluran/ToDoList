@@ -1,4 +1,4 @@
-import styled from 'styled-components/native';
+import styled from "styled-components/native";
 
 const TextInput = styled.TextInput`
   width: 100%;
@@ -7,11 +7,21 @@ const TextInput = styled.TextInput`
   padding: 0 10px;
   border: #e1e1e1;
   margin: 5px 0;
-  color: ${(props) => (props.color ? `${props.color}` : '#000')};
+  color: ${(props) => (props.color ? `${props.color}` : "#000")};
   font-size: 14px;
 `;
 
-export default function Input({ onChangeText, value, ref, placeholder, placeholderTextColor, secureTextEntry, color }) {
+export default function Input({
+  onChangeText,
+  value,
+  ref,
+  placeholder,
+  placeholderTextColor,
+  secureTextEntry,
+  color,
+  keyboardType,
+  autoCapitalize,
+}) {
   return (
     <TextInput
       onChangeText={onChangeText}
@@ -21,6 +31,8 @@ export default function Input({ onChangeText, value, ref, placeholder, placehold
       placeholderTextColor={placeholderTextColor}
       secureTextEntry={secureTextEntry}
       color={color}
+      keyboardType={keyboardType}
+      autoCapitalize={autoCapitalize}
     />
   );
 }
