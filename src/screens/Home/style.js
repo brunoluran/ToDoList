@@ -1,5 +1,5 @@
-import styled from "styled-components/native";
-import { getStatusBarHeight } from "react-native-status-bar-height";
+import styled from 'styled-components/native';
+import { getStatusBarHeight } from 'react-native-status-bar-height';
 
 export const Container = styled.View`
   flex: 1;
@@ -35,11 +35,7 @@ export const Input = styled.TextInput`
 export const PressableIcon = styled.Pressable`
   width: 10%;
   height: 100%;
-  align-items: center;
   justify-content: center;
-  padding-right: 5px;
-  //background-color: red;
-  margin: 5px;
 `;
 
 export const FlatList = styled.FlatList``;

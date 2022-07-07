@@ -1,27 +1,25 @@
-import styled from "styled-components/native";
-import { useTheme } from "styled-components";
-import Ionicons from "@expo/vector-icons/Ionicons";
+import styled from 'styled-components/native';
+import { useTheme } from 'styled-components';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 const ViewList = styled.View`
   width: 100%;
   background-color: #008f8c;
   border-radius: 10px;
   flex-direction: row;
-  padding: 5px;
+  padding: 15px 10px;
   margin-bottom: 15px;
   align-items: center;
 `;
 
 export const ViewIcon = styled.Pressable`
-  width: 15%;
+  width: 10%;
   justify-content: center;
   align-items: center;
-  padding: 10px;
 `;
 
 export const PressableText = styled.Pressable`
-  width: 85%;
-  padding: 15px;
+  width: 90%;
 `;
 
 export const Text = styled.Text`
@@ -34,7 +32,7 @@ export default function List({ data, handleRemove, handleEdit }) {
   return (
     <ViewList>
       <ViewIcon onPress={() => handleRemove(data.key)}>
-        <Ionicons name="remove-circle" size={25} color={theme.color.white} />
+        <Ionicons name='remove-circle' size={25} color={theme.color.white} />
       </ViewIcon>
       <PressableText onPress={() => handleEdit(data)}>
         <Text>{data.name}</Text>
